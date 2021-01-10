@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--使用Spring框架创建对象，在Spring这些都称为beans-->
+
+   <!-- <bean id="User" class="entity.User">
+        <property name="name" value="Maserhe"/>
+        <property name="pwd" value="1234"/>
+
+    </bean>-->
+    <!--根据下标-->
+    <!--<bean id="User" class="entity.User">
+        <constructor-arg index="0" value="Maserhe"/>
+        <constructor-arg index="1" value="1234"/>
+    </bean>-->
+
+    <bean id="User" class="entity.User">
+        <constructor-arg type="java.lang.String" value="Maserhe"/>
+        <constructor-arg type="int" value="1234"/>
+    </bean>
+
+
+
+
+</beans>

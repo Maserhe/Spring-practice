@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="entity.Address">
+        <property name="address" value="沈阳工业大学"/>
+    </bean>
+
+    <bean id="student" class="entity.Student">
+        <!--基本数据类型的注入-->
+        <property name="name" value="Maserhe"/>
+        <!--自定义类的注入-->
+        <property name="address" ref="address"/>
+        <!--数组的注入-->
+        <property name="books">
+            <array>
+                <value>老大</value>
+                <value>老二</value>
+                <value>老三</value>
+                <value>老四</value>
+            </array>
+        </property>
+        
+        <!--list注入-->
+        <property name="hobbies">
+            <list>
+                <value>学习</value>
+                <value>不爱学习</value>
+            </list>
+        </property>
+        
+        <!--map注入-->
+        <property name="card">
+            <map>
+                <entry key="Maserhe" value="很帅！"/>
+                <entry key="erhe" value="靓仔"/>
+            </map>
+        </property>
+        
+        <!--set-->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>COC</value>
+                <value>BOB</value>
+            </set>
+        </property>
+        <!--注入null-->
+        <property name="wife">
+            <null></null>
+        </property>
+        
+        <property name="info">
+            <props>
+                <prop key="name">他的名字</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

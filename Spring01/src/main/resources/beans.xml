@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--使用Spring框架创建对象，在Spring这些都称为beans-->
+    <bean id="UserDaoIml" class="dao.UserDaoIml"/>
+    <bean id="UserDaoMysql" class="dao.UserDaoMysql"/>
+
+    <bean id = "UserServiceIml" class="service.UserServiceIml">
+        <!--ref引用Spring创建好的对象， value基本的数据类型-->
+        <property name="userDao" ref="UserDaoIml"/>
+    </bean>
+
+
+</beans>
