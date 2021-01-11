@@ -8,6 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring02" />
         <module name="Spring01" />
+        <module name="Spring10" />
+        <module name="Spring09" />
+        <module name="Spring08" />
+        <module name="Spring07" />
+        <module name="Spring06" />
         <module name="Spring05" />
         <module name="Spring04" />
         <module name="Spring03" />

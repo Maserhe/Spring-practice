@@ -14,6 +14,11 @@
         <module>Spring03</module>
         <module>Spring04</module>
         <module>Spring05</module>
+        <module>Spring06</module>
+        <module>Spring07</module>
+        <module>Spring08</module>
+        <module>Spring09</module>
+        <module>Spring10</module>
     </modules>
 
     <properties>
