@@ -13,13 +13,9 @@
     <import resource="spring-dao.xml"/>
 
     <bean id="userMapper" class="mapper.UserMapperImpl">
-        <property name="sqlSession" ref="sqlSession"/>
-    </bean>
-
-
-    <!--UserMapperImPl2继承了SqlSessionDaoImport -->
-    <bean id="userMapper2" class="mapper.UserMapperImpl2">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
+
+
 
 </beans>

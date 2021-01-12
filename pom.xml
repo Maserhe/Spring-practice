@@ -19,6 +19,7 @@
         <module>Spring08</module>
         <module>Spring09</module>
         <module>Spring10</module>
+        <module>Spring11</module>
     </modules>
 
     <properties>
@@ -45,6 +46,12 @@
             <artifactId>junit</artifactId>
             <version>4.13</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
         </dependency>
     </dependencies>
 

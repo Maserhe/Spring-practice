@@ -9,14 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Spring10</artifactId>
+    <artifactId>Spring11</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <!--导包-->
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -66,6 +65,7 @@
         </dependency>
 
     </dependencies>
+
 
     <build>
         <resources>
